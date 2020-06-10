@@ -32,5 +32,4 @@ jobs:
     - name: installing surg
       run: npm install --globall surge
     - name: deploying website
-      run: surge ./ helloweb.surge.sh --token $secrets.token
-        
+      run: surge ./ helloweb.surge.sh --token ${{Secrets.SURGE_TOKEN}}
