@@ -33,5 +33,4 @@ jobs:
       run: npm install --globall surge
     - name: deploying website
       run: surge ./ helloweb.surge.sh --token ${{ secrets.TOKEN }}
-        echo Add other actions to build,
-        echo test, and deploy your project.
+        
